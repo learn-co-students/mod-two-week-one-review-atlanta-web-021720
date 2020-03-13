@@ -1,0 +1,11 @@
+<h1>Seas!</h1><br><br>
+<% @seas.each do |sea|%>
+<h2><%=link_to sea.name, sea_path(sea)%></h2><br>
+<label>Temperature: <%=sea.temperature%></label><br>
+<label>Bio: <%=sea.bio%></label><br>
+<label>Image_Url: <%=sea.image_url%></label><br>
+<label>Mood: <%=sea.mood%></label><br>
+<label>Favorite Color: <%=sea.favorite_color%></label><br>
+<label>Scariest Creature: <%=sea.scariest_creature%></label><br>
+<label>Has Mermaids: <%=sea.has_mermaids%></label><br>
+<% end %>

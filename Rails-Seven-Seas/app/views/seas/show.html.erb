@@ -1,0 +1,9 @@
+<h1><%=@sea.name%></h1><br>
+<label>Temperature: <%=@sea.temperature%></label><br>
+<label>Bio: <%=@sea.bio%></label><br>
+<label>Image_Url: <%=@sea.image_url%></label><br>
+<label>Mood: <%=@sea.mood%></label><br>
+<label>Favorite Color: <%=@sea.favorite_color%></label><br>
+<label>Scariest Creature: <%=@sea.scariest_creature%></label><br>
+<label>Has Mermaids: <%=@sea.has_mermaids%></label><br>
+<span><%= link_to 'Delete', sea_path(@sea), method: :delete, class: 'btn btn-danger' %></span>
